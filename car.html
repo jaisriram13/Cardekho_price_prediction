@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cardekho Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="car.js"></script>
+	<link rel="stylesheet" href="car.css">
+</head>
+<body>
+	<h1>Cardekho Price Prediction...</h1>
+<div class="img"></div>
+<form class="form">
+	<h2>Km_driven</h2>
+    <input class="Km_driven"  type="text" id="uiKm" class="intLabel" name="Squareft" value="1000">
+    <h2>Mileage</h2>
+    <input class="mileage"  type="text" id="uiMl" class="intLabel" name="Squareft" value="20">
+    <h2>Engine</h2>
+    <input class="engine"  type="text" id="uiEg" class="intLabel" name="Squareft" value="1028">
+    <h2>No_years</h2>
+    <input class="no_years"  type="text" id="uiNoy" class="intLabel" name="Squareft" value="10">
+	<h2>Seats</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-seats-1" name="uiSeats" value="5"/>
+		<label for="radio-seats-1">5</label>
+		<input type="radio" id="radio-seats-2" name="uiSeats" value="6" checked/>
+		<label for="radio-seats-2">6</label>
+		<input type="radio" id="radio-seats-3" name="uiSeats" value="7"/>
+		<label for="radio-seats-3">7</label>
+		<input type="radio" id="radio-seats-4" name="uiSeats" value="8"/>
+		<label for="radio-seats-4">8</label>
+		<input type="radio" id="radio-seats-5" name="uiSeats" value="9"/>
+		<label for="radio-seats-5">9</label>
+        <input type="radio" id="radio-seats-6" name="uiSeats" value="10"/>
+		<label for="radio-seats-6">10</label>
+	</div>
+		<h2>Fuel</h2>
+	<div>
+  <select class="fuel" name="" id="uiFuels">
+    <option value="" disabled="disabled" selected="selected">Choose a Fuel</option>
+		<option>Petrol</option>
+        <option>cng</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
